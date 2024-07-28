@@ -1,4 +1,94 @@
 style.css
+  
+  /* Intro section */
+  .intro > img {
+    width: 30%;
+    margin-right: 20px;
+  }
+  
+  .intro > p {
+    font-size: 1.5em;
+  }
+  
+  .intro {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .intro-container {
+    display: flex;
+  }
+  
+  #intro-title {
+    text-align: center;
+    background-color:#cc527a;
+    padding: 10px;
+  }
+  
+  /*Banner */
+  /* Part 1 */
+
+.part1 {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+  
+  .banner1 {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container1 {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    box-sizing: border-box;
+  }
+  
+  #boy {
+    height: 380px;
+    width: auto;
+    animation: floatAnimation 1.5s infinite alternate ease-in-out;
+
+  }
+  .content1 {
+    max-width: 50%;
+    color: white;
+    text-align: center;
+  }
+
+  #headline {
+    font-size: 40px;
+  }
+
+  #headline2 {
+    font-size: 25px;
+  }
+  
+  .content1 > p {
+    font-size: 15px;
+  }
+  
+  .banner1 {
+    width: 100%;
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+  }
+  
+/*Intro*/
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -48,19 +138,90 @@ section {
 
 #contact {
     background: #e2e2e2;
-    margin-bottom: 2cm;
+    margin-bottom: 6cm;
 }
 
 .project {
     margin: 1rem 0;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.intro_img {
+    width: 85px;
+    height: auto;
 }
+
+/* Footer */
+footer {
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: #333;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 100%;
+  
+    padding: 1rem 3rem;
+  }
+  
+  footer>* {
+    color: #E4D8C5;
+  }
+  
+  .col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .logo2-container {
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  #logo2 {
+    width: 20%;
+  }
+  
+  .form>* {
+    font-family: Playfair Display;
+  }
+  
+  #email {
+    font-family: Playfair Display;
+  }
+  
+  .form label {
+    font-family: Playfair Display;
+  }
+  
+  .credit {
+    text-align: center;
+  }
+  
+  .credit p {
+    color: white;
+  }
+  
+  #logo {
+    font-family: Playfair Display;
+  }
+  
+  .credit>* {
+    font-family: Playfair Display;
+  }
+  
+  .credit>h2 {
+    width: max-content;
+    margin-bottom: 0.3rem;
+  }
+  
+  .credit>p {
+    font-size: 0.9rem;
+  }
